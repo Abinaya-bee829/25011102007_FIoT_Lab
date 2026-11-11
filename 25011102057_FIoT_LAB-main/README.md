@@ -2,7 +2,7 @@
 
 **Course:** 25CS2741 – Fundamentals of Internet of Things + Lab\
 **University:** Shiv Nadar University Chennai\
-**Repository:** `25011102003_FIoT_Lab`
+**Repository:** `25011102007_FIoT_Lab`
 
 ---
 
