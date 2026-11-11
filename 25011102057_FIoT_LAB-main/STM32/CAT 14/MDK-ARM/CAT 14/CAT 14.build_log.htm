@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mobathi S,    , LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.43.0.0
+Toolchain Path:  C:\Users\MobathiS\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.1.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+C:\Users\MobathiS\Desktop\IOT LAB\FIOT_LAB\STM32\CAT 14\MDK-ARM\CAT 14.uvprojx
+Project File Date:  11/11/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'C:\Users\MobathiS\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'CAT 14'
+assembling startup_stm32f401xe.s...
+../Core/Src/main.c(146): error: passing 'UART_HandleTypeDef *' (aka 'struct __UART_HandleTypeDef *') to parameter of incompatible type 'UART_HandleTypeDef' (aka 'struct __UART_HandleTypeDef'); remove &
+  146 |         ESP8266_Init(StationMode, &huart1);
+      |                                   ^~~~~~~
+../../../../Custom ESP8266_Library/Custom ESP8266_Library\ESPLib.h(82): note: passing argument to parameter 'UARTHandle' here
+   82 | funcState_t ESP8266_Init(espMode_t mode, UART_HandleTypeDef UARTHandle);
+      |                                                             ^
+../Core/Src/main.c(236): error: no member named 'PLLR' in 'RCC_PLLInitTypeDef'
+  236 |   RCC_OscInitStruct.PLL.PLLR = 2;
+      |   ~~~~~~~~~~~~~~~~~~~~~ ^
+../Core/Src/main.c(376): error: use of undeclared identifier 'LD2_GPIO_Port'
+  376 |   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+      |                     ^
+../Core/Src/main.c(376): error: use of undeclared identifier 'LD2_Pin'
+  376 |   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+      |                                    ^
+../Core/Src/main.c(379): error: use of undeclared identifier 'B1_Pin'
+  379 |   GPIO_InitStruct.Pin = B1_Pin;
+      |                         ^
+../Core/Src/main.c(382): error: use of undeclared identifier 'B1_GPIO_Port'
+  382 |   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+      |                 ^
+../Core/Src/main.c(385): error: use of undeclared identifier 'LD2_Pin'
+  385 |   GPIO_InitStruct.Pin = LD2_Pin;
+      |                         ^
+../Core/Src/main.c(389): error: use of undeclared identifier 'LD2_GPIO_Port'
+  389 |   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+      |                 ^
+8 errors generated.
+compiling main.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling bme280.c...
+compiling ESPLib.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_exti.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_uart.c...
+"CAT 14\CAT 14.axf" - 8 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.2.0.pack
+                ARM::CMSIS@6.2.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.1.1.pack
+                Keil::STM32F4xx_DFP@3.1.1
+                STMicroelectronics STM32F4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_CAT_14
+  C:/Users/MobathiS/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.1
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

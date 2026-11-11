@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"lab12\startup_stm32f401xe.o"
+"lab12\main.o"
+"lab12\stm32f4xx_it.o"
+"lab12\stm32f4xx_hal_msp.o"
+"lab12\bme280.o"
+"lab12\stm32f4xx_hal_i2c.o"
+"lab12\stm32f4xx_hal_i2c_ex.o"
+"lab12\stm32f4xx_hal_rcc.o"
+"lab12\stm32f4xx_hal_rcc_ex.o"
+"lab12\stm32f4xx_hal_flash.o"
+"lab12\stm32f4xx_hal_flash_ex.o"
+"lab12\stm32f4xx_hal_flash_ramfunc.o"
+"lab12\stm32f4xx_hal_gpio.o"
+"lab12\stm32f4xx_hal_dma_ex.o"
+"lab12\stm32f4xx_hal_dma.o"
+"lab12\stm32f4xx_hal_pwr.o"
+"lab12\stm32f4xx_hal_pwr_ex.o"
+"lab12\stm32f4xx_hal_cortex.o"
+"lab12\stm32f4xx_hal.o"
+"lab12\stm32f4xx_hal_exti.o"
+"lab12\stm32f4xx_hal_uart.o"
+"lab12\system_stm32f4xx.o"
+--strict --scatter "lab12\lab12.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lab12.map" -o lab12\lab12.axf

@@ -1,0 +1,49 @@
+# Keil generated listing files
+**/Listings/
+
+# Keil generated object and build files
+**/Objects/*.obj
+**/Objects/*.lst
+**/Objects/*.m51
+**/Objects/*.abs
+**/Objects/*.omf
+**/Objects/*.lnp
+**/Objects/*.build_log.htm
+**/Objects/*.crf
+**/Objects/*.dep
+
+# User-specific Keil settings
+**/*.uvgui
+**/*.uvgui.*
+**/*.uvguix*
+**/*.uvopt
+**/*.uvoptx
+
+# Generated intermediate build files
+**/*.axf
+**/*.o
+**/*.d
+**/*.dep
+**/*.map
+**/*.elf
+
+# Generated build directories
+**/Debug/
+**/Release/
+
+# STM32CubeIDE generated build directory
+**/STM32CubeIDE/Debug/
+**/STM32CubeIDE/Release/
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor and temporary files
+*.bak
+*.tmp
+*~
+
+# Keep source code, circuit diagrams, .ioc files,
+# project configuration files and .hex firmware files tracked

@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+"motify_led\startup_stm32f401xc.o"
+"motify_led\main.o"
+"motify_led\stm32f4xx_it.o"
+"motify_led\stm32f4xx_hal_msp.o"
+"motify_led\stm32f4xx_hal_rcc.o"
+"motify_led\stm32f4xx_hal_rcc_ex.o"
+"motify_led\stm32f4xx_hal_flash.o"
+"motify_led\stm32f4xx_hal_flash_ex.o"
+"motify_led\stm32f4xx_hal_flash_ramfunc.o"
+"motify_led\stm32f4xx_hal_gpio.o"
+"motify_led\stm32f4xx_hal_dma_ex.o"
+"motify_led\stm32f4xx_hal_dma.o"
+"motify_led\stm32f4xx_hal_pwr.o"
+"motify_led\stm32f4xx_hal_pwr_ex.o"
+"motify_led\stm32f4xx_hal_cortex.o"
+"motify_led\stm32f4xx_hal.o"
+"motify_led\stm32f4xx_hal_exti.o"
+"motify_led\system_stm32f4xx.o"
+--strict --scatter "motify_led\motify_led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "motify_led.map" -o motify_led\motify_led.axf

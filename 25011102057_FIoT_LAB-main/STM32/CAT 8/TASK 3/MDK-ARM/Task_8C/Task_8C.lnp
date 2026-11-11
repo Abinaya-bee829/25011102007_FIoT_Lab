@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"task_8c\startup_stm32f103xb.o"
+"task_8c\main.o"
+"task_8c\stm32f1xx_it.o"
+"task_8c\stm32f1xx_hal_msp.o"
+"task_8c\stm32f1xx_hal_gpio_ex.o"
+"task_8c\stm32f1xx_hal.o"
+"task_8c\stm32f1xx_hal_rcc.o"
+"task_8c\stm32f1xx_hal_rcc_ex.o"
+"task_8c\stm32f1xx_hal_gpio.o"
+"task_8c\stm32f1xx_hal_dma.o"
+"task_8c\stm32f1xx_hal_cortex.o"
+"task_8c\stm32f1xx_hal_pwr.o"
+"task_8c\stm32f1xx_hal_flash.o"
+"task_8c\stm32f1xx_hal_flash_ex.o"
+"task_8c\stm32f1xx_hal_exti.o"
+"task_8c\system_stm32f1xx.o"
+--strict --scatter "Task_8C\Task_8C.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Task_8C.map" -o Task_8C\Task_8C.axf

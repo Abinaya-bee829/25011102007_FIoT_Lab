@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+"motify led blink\startup_stm32f410rx.o"
+"motify led blink\main.o"
+"motify led blink\stm32f4xx_it.o"
+"motify led blink\stm32f4xx_hal_msp.o"
+"motify led blink\stm32f4xx_hal_rcc.o"
+"motify led blink\stm32f4xx_hal_rcc_ex.o"
+"motify led blink\stm32f4xx_hal_flash.o"
+"motify led blink\stm32f4xx_hal_flash_ex.o"
+"motify led blink\stm32f4xx_hal_flash_ramfunc.o"
+"motify led blink\stm32f4xx_hal_gpio.o"
+"motify led blink\stm32f4xx_hal_dma_ex.o"
+"motify led blink\stm32f4xx_hal_dma.o"
+"motify led blink\stm32f4xx_hal_pwr.o"
+"motify led blink\stm32f4xx_hal_pwr_ex.o"
+"motify led blink\stm32f4xx_hal_cortex.o"
+"motify led blink\stm32f4xx_hal.o"
+"motify led blink\stm32f4xx_hal_exti.o"
+"motify led blink\system_stm32f4xx.o"
+--strict --scatter "motify led blink\motify led blink.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "motify led blink.map" -o "motify led blink\motify led blink.axf"
